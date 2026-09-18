@@ -9,3 +9,18 @@ Each stage ran automated tests (no live OpenAI in pytest), then a **live verific
 A live ingest idempotency check showed large “new/changed” churn that unit tests did not expose. That was a **moving lookback window**, newest-first sampling, and a corpus that never dropped unsampled threads—not unstable hashes. The fix was pinned `--start/--end`, lowest-ID sampling, new/changed/unchanged stats, and **replace-the-sample** corpus semantics.
 
 Generated code was not accepted without review. Citation handling, sample-scoped claims, and the no-RAG isolation tests were tightened after inspecting real reports.
+
+## Deliberate scope choices
+
+I prioritized the required end-to-end workflow: automated ingestion, vector
+retrieval, grounded report generation, and the RAG vs no-RAG comparison.
+
+I considered the optional embedding visualization, retrieval-frequency
+statistics, and agentic ingestion ideas from the challenge, but did not add
+them because they were not necessary to demonstrate the core system and would
+have increased scope beyond the intended timebox.
+
+I did not run `/insights`. Instead, this file documents the actual AI-assisted
+development workflow, including staged implementation, automated testing, live
+verification, and the ingestion/idempotency issue discovered during manual
+testing.
