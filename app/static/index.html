@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Community Voices — Hacker News</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="report-kicker">Community Voices report</p>
+      <h1>Community Voices — Hacker News</h1>
+      <p class="lede">
+        This app produces a weekly Community Voices document: what Hacker News
+        discussed in the past seven days, and a clearly labeled prediction of what
+        it may discuss next week. Reports are grounded in retrieved comments (RAG)
+        and compared with a no-RAG baseline that receives no current-week evidence.
+      </p>
+      <p class="disclaimer">
+        This is a bounded seven-day sample, not an archive of all Hacker News.
+        Next-week items are predictions, not observations.
+      </p>
+    </header>
+
+    <section class="panel" aria-labelledby="status-heading">
+      <h2 id="status-heading">Backend status</h2>
+      <p id="backend-status" data-state="pending">Checking local backend…</p>
+      <p class="hint">
+        The health check reports whether an OpenAI API key is present. It does not
+        send the key anywhere or call the model provider.
+      </p>
+    </section>
+
+    <section class="actions" aria-labelledby="actions-heading">
+      <h2 id="actions-heading">Actions</h2>
+      <p>
+        Collect discussions with <code>python -m app.ingest</code>. Generate the
+        RAG report with <code>python -m app.generate_report</code>. Compare RAG
+        vs no-RAG with <code>python -m app.compare_reports</code>.
+      </p>
+      <div class="button-row">
+        <button type="button" disabled>
+          Collect discussions
+          <span class="button-note">CLI only — python -m app.ingest</span>
+        </button>
+        <button type="button" disabled>
+          Generate weekly report
+          <span class="button-note">CLI only — python -m app.generate_report</span>
+        </button>
+        <button type="button" disabled>
+          Compare RAG vs no-RAG
+          <span class="button-note">CLI only — python -m app.compare_reports</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="panel empty" aria-labelledby="collected-heading">
+      <h2 id="collected-heading">Collected data</h2>
+      <p id="collected-status">Checking the local vector store…</p>
+    </section>
+
+    <section class="panel empty" id="report-panel" aria-labelledby="report-heading">
+      <h2 id="report-heading">Weekly report (RAG-powered)</h2>
+      <div id="weekly-report">
+        <p>No report has been generated yet.</p>
+      </div>
+    </section>
+
+    <section class="panel empty" id="compare-panel" aria-labelledby="compare-heading">
+      <h2 id="compare-heading">RAG versus no-RAG comparison</h2>
+      <div id="comparison-view">
+        <p>No comparison has been generated yet.</p>
+      </div>
+    </section>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

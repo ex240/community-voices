@@ -1,0 +1,464 @@
+{
+  "example_note": "Recorded example output from a real local run. Not live data. Contains no secrets. Hacker News item links are public. Live generation requires the reviewer's own OpenAI API key.",
+  "kind": "rag-vs-no-rag",
+  "window_start": "2026-09-10T17:00:00+00:00",
+  "window_end": "2026-09-17T17:00:00+00:00",
+  "model": "gpt-4.1-mini",
+  "generated_at": "2026-09-18T14:45:31.430880+00:00",
+  "rag_evidence_supplied": true,
+  "baseline_evidence_supplied": false,
+  "rag_path": "./data/latest_report.json",
+  "baseline_path": "data/latest_baseline_report.json",
+  "rag": {
+    "label": "RAG-powered report",
+    "kind": "rag",
+    "window_start": "2026-09-10T17:00:00+00:00",
+    "window_end": "2026-09-17T17:00:00+00:00",
+    "generated_at": "2026-09-18T14:45:20.594775+00:00",
+    "model": "gpt-4.1-mini",
+    "evidence_supplied": true,
+    "limitation": "This report is based on a bounded sample of Hacker News comments from the selected window. It does not represent all of Hacker News.",
+    "retrospective": [
+      {
+        "title": "Job Market and Hiring in Tech",
+        "body": "Within the sampled discussions, several posts highlighted ongoing hiring activity in tech, especially for roles involving AI, Python, TypeScript, and remote work. Companies like Squoosh.AI and Catalyst·Wayfare AI are recruiting for positions that blend AI research and engineering, emphasizing skills in LLMs, agent orchestration, and production AI systems [S1] [S13]. Candidates from diverse locations including India, the USA, and Georgia shared detailed resumes and technology stacks, often emphasizing remote work preferences and experience with AI agents, backend systems, and cloud infrastructure [S2] [S4] [S29]. Some comments reflected on the evolving nature of software development roles, where developers are expected to handle multiple responsibilities including database expertise, cloud operations, and front-end work without commensurate pay increases [S6]. Additionally, discussions touched on the impact of AI on traditional development workflows and the potential for AI to lower barriers for app development, though opinions varied on the optimism of these changes [S5] [S7] [S8] [S31]."
+      },
+      {
+        "title": "AI and Its Impact on Society and Engineering",
+        "body": "The sampled threads included conversations about the dual nature of AI as a powerful but potentially dangerous technology. Some posts expressed concerns about AI's existential risks, including the possibility of human extinction, and the challenges of balancing safety focus with innovation in AI labs [S9] [S10]. There was debate about the role of AI in engineering operations, with some cautioning against fully delegating critical incident handling to AI, emphasizing the importance of human oversight [S11]. Discussions also covered the use of AI in security contexts and the implications of restricting AI contributions in open source projects [S12] [S16]. Job postings for AI engineers underscored the demand for expertise in production LLM APIs, agent systems, and domain-specific AI applications in finance, healthcare, and legal sectors [S13] [S15]. A comment questioned the evidence for widespread job losses due to AI, indicating some skepticism about common narratives [S14]."
+      },
+      {
+        "title": "Privacy and Security Concerns with Technology",
+        "body": "Within the sampled discussions, privacy issues related to consumer electronics and software were prominent. Comments about LG and Samsung smart TVs logging conversations suggested user strategies to block DNS requests to mitigate privacy risks [S17]. The Fairphone Gen 6+ was discussed with respect to delayed security patches and challenges in maintaining timely updates, raising concerns about device security lifecycle management [S18] [S20]. Debates about DNSSEC adoption revealed differing views on its prevalence and effectiveness, with some participants citing statistics showing increased adoption and others questioning the relevance of those statistics to typical users [S19] [S22]. Security advisories for self-hosted software like Forgejo were shared, emphasizing the importance of following official channels for vulnerability information [S21]. Broader concerns were voiced about Silicon Valley's approach to security in military-industrial applications, highlighting risks from insufficient prioritization of security [S23]. Finally, discussions about GrapheneOS touched on the balance between encryption benefits and potential centralized control by dominant platform providers [S24]."
+      },
+      {
+        "title": "Software Development Tools and Techniques",
+        "body": "The sampled posts included technical discussions on programming languages, tooling, and performance optimization. Rust was mentioned in contexts such as rewriting firmware for an e-scooter and efforts to enable loop auto-vectorization, with references to tools that assist in assembly inspection and leveraging system C libraries for optimized operations [S25] [S27] [S30]. Comparisons between Rust and Clojure highlighted trade-offs in ergonomics and type system design, with some appreciation for Clojure's dynamic typing ergonomics and Rust's broader type expressiveness [S26] [S28]. Job postings and hiring discussions also referenced technologies like Common Lisp, Emacs Lisp, Java, Kubernetes, Terraform, and cloud platforms, reflecting a diverse tooling landscape [S4]. Additionally, there was curiosity about modernizing GUI frameworks with AI assistance to create lightweight cross-platform widgets as alternatives to heavier solutions like Electron.js [S31]."
+      },
+      {
+        "title": "Societal and Political Issues Reflected in Tech Discussions",
+        "body": "Several sampled comments engaged with political and societal themes intersecting with technology. Discussions about democracy and governance included contrasting views on the desirability and realities of democratic systems, with some emphasizing the risks of projecting liberal values universally and others defending democracy as a preferable system despite its flaws [S35] [S36]. The influence of AI on political discourse was noted, with concerns about misinformation and propaganda affecting governance [S32]. Labor and consumer protection issues surfaced in conversations about corporate terms of service enforcement and regulatory actions, with examples from PayPal and European consumer bureaus illustrating institutional checks on corporate power [S33] [S39]. Economic topics included the rising costs of streaming subscriptions, with debate about how content changes affect pricing perceptions [S38]. Finally, critiques of Silicon Valley's role in military-industrial transformation raised alarms about security priorities and innovation dynamics [S23] [S37]."
+      }
+    ],
+    "predictions": [
+      {
+        "claim": "Discussions about hiring in tech are likely to continue emphasizing remote work and AI-related skills.",
+        "rationale": "Recent posts show active hiring for remote roles involving AI, Python, TypeScript, and cloud technologies, reflecting ongoing demand for these skills and flexible work arrangements [S1] [S2] [S4] [S13].",
+        "uncertainty": "While current trends suggest continued interest, shifts in economic conditions or technology focus could alter hiring priorities."
+      },
+      {
+        "claim": "Concerns about AI's societal impact and existential risks may remain prominent in community discussions.",
+        "rationale": "Multiple sampled comments express both fascination and apprehension about AI's dangers, safety challenges, and ethical implications, indicating sustained community engagement with these topics [S9] [S10] [S11] [S14].",
+        "uncertainty": "The intensity and framing of these concerns may fluctuate with AI development milestones and public discourse."
+      },
+      {
+        "claim": "Privacy and security issues related to consumer devices and software updates could continue to be a focus.",
+        "rationale": "Ongoing conversations about smart TV privacy, delayed security patches on devices like Fairphone, and DNSSEC adoption suggest persistent community interest in practical security and privacy challenges [S17] [S18] [S19] [S20].",
+        "uncertainty": "Emerging technologies or regulatory changes might shift attention to new or different privacy concerns."
+      },
+      {
+        "claim": "Technical discussions on programming languages and performance optimization are likely to persist, with growing interest in AI-assisted development tools.",
+        "rationale": "Posts about Rust, Clojure, auto-vectorization, and AI agents assisting in code inspection indicate an active interest in improving development efficiency and exploring language trade-offs [S25] [S27] [S28] [S30].",
+        "uncertainty": "The specific tools and languages discussed may evolve as new technologies emerge."
+      },
+      {
+        "claim": "Societal and political topics related to technology governance, consumer rights, and economic impacts may continue to surface in discussions.",
+        "rationale": "Community members engage with themes of democracy, regulatory enforcement, misinformation, and economic trends such as subscription costs, reflecting ongoing intersections between tech and society [S32] [S33] [S35] [S38] [S39].",
+        "uncertainty": "The prominence of these topics may vary with current events and community interests."
+      }
+    ],
+    "sources": [
+      {
+        "citation_id": "S1",
+        "comment_id": 49662536,
+        "story_id": 49522897,
+        "story_title": "Ask HN: Who is hiring? (September 2026)",
+        "source_url": "https://news.ycombinator.com/item?id=49662536",
+        "created_at": "2026-09-11T17:57:09+00:00"
+      },
+      {
+        "citation_id": "S2",
+        "comment_id": 49648574,
+        "story_id": 49522896,
+        "story_title": "Ask HN: Who wants to be hired? (September 2026)",
+        "source_url": "https://news.ycombinator.com/item?id=49648574",
+        "created_at": "2026-09-10T18:51:48+00:00"
+      },
+      {
+        "citation_id": "S3",
+        "comment_id": 49649994,
+        "story_id": 49522897,
+        "story_title": "Ask HN: Who is hiring? (September 2026)",
+        "source_url": "https://news.ycombinator.com/item?id=49649994",
+        "created_at": "2026-09-10T20:50:48+00:00"
+      },
+      {
+        "citation_id": "S4",
+        "comment_id": 49652178,
+        "story_id": 49522896,
+        "story_title": "Ask HN: Who wants to be hired? (September 2026)",
+        "source_url": "https://news.ycombinator.com/item?id=49652178",
+        "created_at": "2026-09-11T00:53:52+00:00"
+      },
+      {
+        "citation_id": "S5",
+        "comment_id": 49646961,
+        "story_id": 49643982,
+        "story_title": "Shopify is moving from React Native back to Swift and Kotlin",
+        "source_url": "https://news.ycombinator.com/item?id=49646961",
+        "created_at": "2026-09-10T17:03:11+00:00"
+      },
+      {
+        "citation_id": "S6",
+        "comment_id": 49661031,
+        "story_id": 49601138,
+        "story_title": "I've operated petabyte-scale ClickHouse clusters for 5 years",
+        "source_url": "https://news.ycombinator.com/item?id=49661031",
+        "created_at": "2026-09-11T16:23:34+00:00"
+      },
+      {
+        "citation_id": "S7",
+        "comment_id": 49668119,
+        "story_id": 49538375,
+        "story_title": "Saving money on Google Photos with Immich: Your own personal photo storage",
+        "source_url": "https://news.ycombinator.com/item?id=49668119",
+        "created_at": "2026-09-12T02:31:34+00:00"
+      },
+      {
+        "citation_id": "S8",
+        "comment_id": 49646935,
+        "story_id": 49643982,
+        "story_title": "Shopify is moving from React Native back to Swift and Kotlin",
+        "source_url": "https://news.ycombinator.com/item?id=49646935",
+        "created_at": "2026-09-10T17:01:40+00:00"
+      },
+      {
+        "citation_id": "S9",
+        "comment_id": 49672981,
+        "story_id": 49672510,
+        "story_title": "We Must Pace the Frontier",
+        "source_url": "https://news.ycombinator.com/item?id=49672981",
+        "created_at": "2026-09-12T15:00:04+00:00"
+      },
+      {
+        "citation_id": "S10",
+        "comment_id": 49672961,
+        "story_id": 49672510,
+        "story_title": "We Must Pace the Frontier",
+        "source_url": "https://news.ycombinator.com/item?id=49672961",
+        "created_at": "2026-09-12T14:58:15+00:00"
+      },
+      {
+        "citation_id": "S11",
+        "comment_id": 49671801,
+        "story_id": 49574167,
+        "story_title": "AI handles incidents, engineers lose touch with their systems",
+        "source_url": "https://news.ycombinator.com/item?id=49671801",
+        "created_at": "2026-09-12T12:47:01+00:00"
+      },
+      {
+        "citation_id": "S12",
+        "comment_id": 49660386,
+        "story_id": 49659245,
+        "story_title": "HuggingFace: Security.txt",
+        "source_url": "https://news.ycombinator.com/item?id=49660386",
+        "created_at": "2026-09-11T15:46:19+00:00"
+      },
+      {
+        "citation_id": "S13",
+        "comment_id": 49650855,
+        "story_id": 49522897,
+        "story_title": "Ask HN: Who is hiring? (September 2026)",
+        "source_url": "https://news.ycombinator.com/item?id=49650855",
+        "created_at": "2026-09-10T22:15:25+00:00"
+      },
+      {
+        "citation_id": "S14",
+        "comment_id": 49742368,
+        "story_id": 49627887,
+        "story_title": "Anthropic researcher says more than 10% chance AI \"could kill all humans\"",
+        "source_url": "https://news.ycombinator.com/item?id=49742368",
+        "created_at": "2026-09-17T15:35:15+00:00"
+      },
+      {
+        "citation_id": "S15",
+        "comment_id": 49661611,
+        "story_id": 49522897,
+        "story_title": "Ask HN: Who is hiring? (September 2026)",
+        "source_url": "https://news.ycombinator.com/item?id=49661611",
+        "created_at": "2026-09-11T16:57:55+00:00"
+      },
+      {
+        "citation_id": "S16",
+        "comment_id": 49647515,
+        "story_id": 49645907,
+        "story_title": "Forgejo <=16.0.3 Critical RCE",
+        "source_url": "https://news.ycombinator.com/item?id=49647515",
+        "created_at": "2026-09-10T17:38:19+00:00"
+      },
+      {
+        "citation_id": "S17",
+        "comment_id": 49661502,
+        "story_id": 49573427,
+        "story_title": "LG and Samsung TVs are logging everything you say [video]",
+        "source_url": "https://news.ycombinator.com/item?id=49661502",
+        "created_at": "2026-09-11T16:50:42+00:00"
+      },
+      {
+        "citation_id": "S18",
+        "comment_id": 49656241,
+        "story_id": 49563784,
+        "story_title": "How Fairphone built the Fairphone Gen 6+",
+        "source_url": "https://news.ycombinator.com/item?id=49656241",
+        "created_at": "2026-09-11T10:50:01+00:00"
+      },
+      {
+        "citation_id": "S19",
+        "comment_id": 49699920,
+        "story_id": 49566193,
+        "story_title": "deSEC – Free Secure DNS",
+        "source_url": "https://news.ycombinator.com/item?id=49699920",
+        "created_at": "2026-09-14T16:47:25+00:00"
+      },
+      {
+        "citation_id": "S20",
+        "comment_id": 49672618,
+        "story_id": 49563784,
+        "story_title": "How Fairphone built the Fairphone Gen 6+",
+        "source_url": "https://news.ycombinator.com/item?id=49672618",
+        "created_at": "2026-09-12T14:23:28+00:00"
+      },
+      {
+        "citation_id": "S21",
+        "comment_id": 49647167,
+        "story_id": 49645907,
+        "story_title": "Forgejo <=16.0.3 Critical RCE",
+        "source_url": "https://news.ycombinator.com/item?id=49647167",
+        "created_at": "2026-09-10T17:15:45+00:00"
+      },
+      {
+        "citation_id": "S22",
+        "comment_id": 49686497,
+        "story_id": 49566193,
+        "story_title": "deSEC – Free Secure DNS",
+        "source_url": "https://news.ycombinator.com/item?id=49686497",
+        "created_at": "2026-09-13T17:41:34+00:00"
+      },
+      {
+        "citation_id": "S23",
+        "comment_id": 49646930,
+        "story_id": 49645754,
+        "story_title": "Silicon Valley Is Transforming the Military-Industrial Complex",
+        "source_url": "https://news.ycombinator.com/item?id=49646930",
+        "created_at": "2026-09-10T17:01:20+00:00"
+      },
+      {
+        "citation_id": "S24",
+        "comment_id": 49654933,
+        "story_id": 49590512,
+        "story_title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
+        "source_url": "https://news.ycombinator.com/item?id=49654933",
+        "created_at": "2026-09-11T07:53:56+00:00"
+      },
+      {
+        "citation_id": "S25",
+        "comment_id": 49683974,
+        "story_id": 49638071,
+        "story_title": "Reverse engineering my e-scooter and rewriting the firmware in Rust",
+        "source_url": "https://news.ycombinator.com/item?id=49683974",
+        "created_at": "2026-09-13T13:46:22+00:00"
+      },
+      {
+        "citation_id": "S26",
+        "comment_id": 49695609,
+        "story_id": 49558685,
+        "story_title": "Simple Is Not Small",
+        "source_url": "https://news.ycombinator.com/item?id=49695609",
+        "created_at": "2026-09-14T12:18:58+00:00"
+      },
+      {
+        "citation_id": "S27",
+        "comment_id": 49698969,
+        "story_id": 49638555,
+        "story_title": "Trying to Make a Loop Auto-Vectorize",
+        "source_url": "https://news.ycombinator.com/item?id=49698969",
+        "created_at": "2026-09-14T15:49:49+00:00"
+      },
+      {
+        "citation_id": "S28",
+        "comment_id": 49655870,
+        "story_id": 49558685,
+        "story_title": "Simple Is Not Small",
+        "source_url": "https://news.ycombinator.com/item?id=49655870",
+        "created_at": "2026-09-11T09:56:23+00:00"
+      },
+      {
+        "citation_id": "S29",
+        "comment_id": 49661372,
+        "story_id": 49522896,
+        "story_title": "Ask HN: Who wants to be hired? (September 2026)",
+        "source_url": "https://news.ycombinator.com/item?id=49661372",
+        "created_at": "2026-09-11T16:42:02+00:00"
+      },
+      {
+        "citation_id": "S30",
+        "comment_id": 49701590,
+        "story_id": 49638555,
+        "story_title": "Trying to Make a Loop Auto-Vectorize",
+        "source_url": "https://news.ycombinator.com/item?id=49701590",
+        "created_at": "2026-09-14T18:26:14+00:00"
+      },
+      {
+        "citation_id": "S31",
+        "comment_id": 49646951,
+        "story_id": 49643982,
+        "story_title": "Shopify is moving from React Native back to Swift and Kotlin",
+        "source_url": "https://news.ycombinator.com/item?id=49646951",
+        "created_at": "2026-09-10T17:02:29+00:00"
+      },
+      {
+        "citation_id": "S32",
+        "comment_id": 49671472,
+        "story_id": 49627887,
+        "story_title": "Anthropic researcher says more than 10% chance AI \"could kill all humans\"",
+        "source_url": "https://news.ycombinator.com/item?id=49671472",
+        "created_at": "2026-09-12T12:05:08+00:00"
+      },
+      {
+        "citation_id": "S33",
+        "comment_id": 49666353,
+        "story_id": 49592375,
+        "story_title": "216M Spy TVs – The LG Smart TV Problem [video]",
+        "source_url": "https://news.ycombinator.com/item?id=49666353",
+        "created_at": "2026-09-11T22:38:20+00:00"
+      },
+      {
+        "citation_id": "S34",
+        "comment_id": 49672946,
+        "story_id": 49672510,
+        "story_title": "We must pace the frontier",
+        "source_url": "https://news.ycombinator.com/item?id=49672946",
+        "created_at": "2026-09-12T14:56:16+00:00"
+      },
+      {
+        "citation_id": "S35",
+        "comment_id": 49648232,
+        "story_id": 49619949,
+        "story_title": "Iran says it captured US submarine drone in Strait of Hormuz",
+        "source_url": "https://news.ycombinator.com/item?id=49648232",
+        "created_at": "2026-09-10T18:28:18+00:00"
+      },
+      {
+        "citation_id": "S36",
+        "comment_id": 49650519,
+        "story_id": 49619949,
+        "story_title": "Iran says it captured US submarine drone in Strait of Hormuz",
+        "source_url": "https://news.ycombinator.com/item?id=49650519",
+        "created_at": "2026-09-10T21:39:59+00:00"
+      },
+      {
+        "citation_id": "S37",
+        "comment_id": 49664025,
+        "story_id": 49661901,
+        "story_title": "Stop Omarchy",
+        "source_url": "https://news.ycombinator.com/item?id=49664025",
+        "created_at": "2026-09-11T19:28:33+00:00"
+      },
+      {
+        "citation_id": "S38",
+        "comment_id": 49647556,
+        "story_id": 49641215,
+        "story_title": "The same nine streaming subscriptions cost $702/year more than in 2021",
+        "source_url": "https://news.ycombinator.com/item?id=49647556",
+        "created_at": "2026-09-10T17:40:59+00:00"
+      },
+      {
+        "citation_id": "S39",
+        "comment_id": 49666419,
+        "story_id": 49592375,
+        "story_title": "216M Spy TVs – The LG Smart TV Problem [video]",
+        "source_url": "https://news.ycombinator.com/item?id=49666419",
+        "created_at": "2026-09-11T22:43:28+00:00"
+      }
+    ],
+    "metrics": {
+      "latency_seconds": 23.839,
+      "input_tokens": 11483,
+      "output_tokens": 1970,
+      "total_tokens": 13453
+    }
+  },
+  "baseline": {
+    "label": "No-RAG baseline",
+    "kind": "no-rag",
+    "window_start": "2026-09-10T17:00:00+00:00",
+    "window_end": "2026-09-17T17:00:00+00:00",
+    "generated_at": "2026-09-18T14:45:31.430880+00:00",
+    "model": "gpt-4.1-mini",
+    "evidence_supplied": false,
+    "limitation": "No current Hacker News source material was supplied. This baseline was not given retrieved comments, titles, themes, corpus summaries, or search tools.",
+    "retrospective": [
+      {
+        "title": "Lack of direct data for the week of September 10–17, 2026",
+        "body": "Due to the absence of supplied Hacker News content or summaries for the specified week, it is not possible to provide a verified overview of the community discussions that took place between September 10 and September 17, 2026. Without access to thread titles, comments, or thematic summaries, any attempt to characterize the week's conversations would be speculative."
+      }
+    ],
+    "predictions": [
+      {
+        "claim": "The Hacker News community may continue to engage deeply with emerging technologies and programming trends.",
+        "rationale": "Historically, Hacker News discussions frequently revolve around new developments in software engineering, AI, cybersecurity, and startup culture. Given ongoing innovation in these areas, it is likely that these topics will remain prominent.",
+        "uncertainty": "Without current data, it is uncertain which specific technologies or trends will dominate the conversation in the upcoming week."
+      },
+      {
+        "claim": "Discussions about ethical implications and societal impact of technology could remain significant.",
+        "rationale": "The community has shown sustained interest in the broader consequences of technology, including privacy, AI ethics, and regulation, which are ongoing and evolving issues.",
+        "uncertainty": "The intensity and focus of these discussions may vary depending on recent news or developments that are not currently known."
+      },
+      {
+        "claim": "Technical deep-dives and practical programming advice are likely to continue being popular topics.",
+        "rationale": "Hacker News traditionally serves as a platform for sharing knowledge, tutorials, and problem-solving strategies, which are evergreen interests among its users.",
+        "uncertainty": "The specific languages, frameworks, or tools discussed may shift based on emerging trends or community interests."
+      }
+    ],
+    "metrics": {
+      "latency_seconds": 9.493,
+      "input_tokens": 374,
+      "output_tokens": 390,
+      "total_tokens": 764
+    }
+  },
+  "observations": [
+    {
+      "dimension": "Evidence grounding",
+      "rag": "Source-backed: 39 stored sources; cited IDs in prose: S1, S13, S2, S4, S29, S6, S5, S7, S8, S31, S9, S10, S11, S12, S16, S15, S14, S17, S18, S20, S19, S22, S21, S23, S24, S25, S27, S30, S26, S28, S35, S36, S32, S33, S39, S38, S37.",
+      "baseline": "No community evidence was supplied. There is no Sources section."
+    },
+    {
+      "dimension": "Specificity",
+      "rag": "Names sampled threads such as: Ask HN: Who is hiring? (September 2026); Ask HN: Who wants to be hired? (September 2026); Shopify is moving from React Native back to Swift and Kotlin; I've operated petabyte-scale ClickHouse clusters for 5 years; Saving money on Google Photos with Immich: Your own personal photo storage",
+      "baseline": "Generic or prior-knowledge themes without sampled thread titles."
+    },
+    {
+      "dimension": "Verifiability",
+      "rag": "Reviewers can open stored Hacker News URLs for cited comments.",
+      "baseline": "Claims cannot be traced to supplied current-week comments."
+    },
+    {
+      "dimension": "Unsupported claims",
+      "rag": "Retrospective claims are constrained to supplied evidence IDs.",
+      "baseline": "Baseline disclosed that current-week source material was not supplied."
+    },
+    {
+      "dimension": "Prediction rationale",
+      "rag": "Next-week predictions cite retrieved evidence.",
+      "baseline": "Predictions cannot be tied to observed current-week evidence."
+    },
+    {
+      "dimension": "Coverage disclosure",
+      "rag": "This report is based on a bounded sample of Hacker News comments from the selected window. It does not represent all of Hacker News.",
+      "baseline": "No current Hacker News source material was supplied. This baseline was not given retrieved comments, titles, themes, corpus summaries, or search tools."
+    }
+  ],
+  "manual_note": "",
+  "limitations": "This comparison describes one window and one generation model. Latency and token counts are engineering metrics, not quality scores. It does not measure next-week prediction accuracy."
+}

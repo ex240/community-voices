@@ -1,0 +1,867 @@
+{
+  "example_note": "Recorded example output from a real local run. Not live data. Contains no secrets. Hacker News item links are public. Live generation requires the reviewer's own OpenAI API key.",
+  "kind": "rag",
+  "window_start": "2026-09-10T17:00:00+00:00",
+  "window_end": "2026-09-17T17:00:00+00:00",
+  "generated_at": "2026-09-18T14:45:20.594775+00:00",
+  "model": "gpt-4.1-mini",
+  "embedding_model": "text-embedding-3-small",
+  "chunk_count": 349,
+  "thread_count": 50,
+  "comment_count": 320,
+  "overview_story_ids": [
+    49492632,
+    49522896,
+    49522897,
+    49538375,
+    49539872,
+    49540561,
+    49542837,
+    49549919,
+    49554643,
+    49555114,
+    49558685,
+    49562915,
+    49563784,
+    49566193,
+    49571465,
+    49573427,
+    49574167,
+    49574941,
+    49577985,
+    49578866,
+    49588080,
+    49589804,
+    49590129,
+    49590512,
+    49592375,
+    49595505,
+    49599481,
+    49601138,
+    49612676,
+    49619949,
+    49627655,
+    49627887,
+    49629865,
+    49635621,
+    49637093,
+    49637385,
+    49638071,
+    49638510,
+    49638555,
+    49641215
+  ],
+  "themes": [
+    {
+      "title": "Job Market and Hiring in Tech",
+      "description": "Recurring discussions about job opportunities, hiring trends, and remote work preferences, including specific technologies like Python, TypeScript, and AI-related fields.",
+      "retrieval_query": "tech hiring remote jobs Python TypeScript AI",
+      "citation_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "hn-49662536-0",
+          "comment_id": 49662536,
+          "story_id": 49522897,
+          "distance": 0.42435508966445923
+        },
+        {
+          "chunk_id": "hn-49648574-0",
+          "comment_id": 49648574,
+          "story_id": 49522896,
+          "distance": 0.4347718358039856
+        },
+        {
+          "chunk_id": "hn-49649994-1",
+          "comment_id": 49649994,
+          "story_id": 49522897,
+          "distance": 0.45708316564559937
+        },
+        {
+          "chunk_id": "hn-49652178-0",
+          "comment_id": 49652178,
+          "story_id": 49522896,
+          "distance": 0.48687028884887695
+        },
+        {
+          "chunk_id": "hn-49646961-0",
+          "comment_id": 49646961,
+          "story_id": 49643982,
+          "distance": 0.5746200084686279
+        },
+        {
+          "chunk_id": "hn-49661031-0",
+          "comment_id": 49661031,
+          "story_id": 49601138,
+          "distance": 0.5991158485412598
+        },
+        {
+          "chunk_id": "hn-49668119-0",
+          "comment_id": 49668119,
+          "story_id": 49538375,
+          "distance": 0.6169164180755615
+        },
+        {
+          "chunk_id": "hn-49646935-0",
+          "comment_id": 49646935,
+          "story_id": 49643982,
+          "distance": 0.6426447629928589
+        }
+      ]
+    },
+    {
+      "title": "AI and Its Impact on Society and Engineering",
+      "description": "Conversations about AI advancements such as GPT-6, AI handling incidents in engineering, concerns about AI risks including existential threats, and AI's role in software development and automation.",
+      "retrieval_query": "AI advancements GPT-6 AI risks AI in engineering automation",
+      "citation_ids": [
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "hn-49672981-0",
+          "comment_id": 49672981,
+          "story_id": 49672510,
+          "distance": 0.5339160561561584
+        },
+        {
+          "chunk_id": "hn-49672961-0",
+          "comment_id": 49672961,
+          "story_id": 49672510,
+          "distance": 0.5366456508636475
+        },
+        {
+          "chunk_id": "hn-49671801-0",
+          "comment_id": 49671801,
+          "story_id": 49574167,
+          "distance": 0.5431836843490601
+        },
+        {
+          "chunk_id": "hn-49660386-0",
+          "comment_id": 49660386,
+          "story_id": 49659245,
+          "distance": 0.5437352061271667
+        },
+        {
+          "chunk_id": "hn-49650855-0",
+          "comment_id": 49650855,
+          "story_id": 49522897,
+          "distance": 0.5582764148712158
+        },
+        {
+          "chunk_id": "hn-49742368-0",
+          "comment_id": 49742368,
+          "story_id": 49627887,
+          "distance": 0.567598819732666
+        },
+        {
+          "chunk_id": "hn-49661611-1",
+          "comment_id": 49661611,
+          "story_id": 49522897,
+          "distance": 0.5678361058235168
+        },
+        {
+          "chunk_id": "hn-49647515-0",
+          "comment_id": 49647515,
+          "story_id": 49645907,
+          "distance": 0.5901429653167725
+        }
+      ]
+    },
+    {
+      "title": "Privacy and Security Concerns with Technology",
+      "description": "Discussions about privacy issues related to smart TVs logging conversations, secure DNS services like deSEC, security patches in devices like Fairphone, and secure software like GrapheneOS.",
+      "retrieval_query": "privacy security smart TVs DNS security patches GrapheneOS",
+      "citation_ids": [
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "hn-49661502-0",
+          "comment_id": 49661502,
+          "story_id": 49573427,
+          "distance": 0.45758116245269775
+        },
+        {
+          "chunk_id": "hn-49656241-0",
+          "comment_id": 49656241,
+          "story_id": 49563784,
+          "distance": 0.6165505647659302
+        },
+        {
+          "chunk_id": "hn-49699920-1",
+          "comment_id": 49699920,
+          "story_id": 49566193,
+          "distance": 0.6238875389099121
+        },
+        {
+          "chunk_id": "hn-49672618-0",
+          "comment_id": 49672618,
+          "story_id": 49563784,
+          "distance": 0.6329255104064941
+        },
+        {
+          "chunk_id": "hn-49647167-0",
+          "comment_id": 49647167,
+          "story_id": 49645907,
+          "distance": 0.6343717575073242
+        },
+        {
+          "chunk_id": "hn-49686497-0",
+          "comment_id": 49686497,
+          "story_id": 49566193,
+          "distance": 0.6432873010635376
+        },
+        {
+          "chunk_id": "hn-49646930-0",
+          "comment_id": 49646930,
+          "story_id": 49645754,
+          "distance": 0.6621336936950684
+        },
+        {
+          "chunk_id": "hn-49654933-0",
+          "comment_id": 49654933,
+          "story_id": 49590512,
+          "distance": 0.6639546155929565
+        }
+      ]
+    },
+    {
+      "title": "Software Development Tools and Techniques",
+      "description": "Topics covering programming languages and tools such as Rust auto-vectorization, pedagogical IDEs, microkernels in Ada, async search performance in Emacs, and large-scale data cluster management with ClickHouse.",
+      "retrieval_query": "software development Rust IDE microkernel Emacs ClickHouse",
+      "citation_ids": [
+        "S25",
+        "S26",
+        "S4",
+        "S27",
+        "S28",
+        "S29",
+        "S30",
+        "S31"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "hn-49683974-0",
+          "comment_id": 49683974,
+          "story_id": 49638071,
+          "distance": 0.49077486991882324
+        },
+        {
+          "chunk_id": "hn-49695609-0",
+          "comment_id": 49695609,
+          "story_id": 49558685,
+          "distance": 0.5229028463363647
+        },
+        {
+          "chunk_id": "hn-49652178-0",
+          "comment_id": 49652178,
+          "story_id": 49522896,
+          "distance": 0.527690052986145
+        },
+        {
+          "chunk_id": "hn-49698969-0",
+          "comment_id": 49698969,
+          "story_id": 49638555,
+          "distance": 0.5539782643318176
+        },
+        {
+          "chunk_id": "hn-49655870-2",
+          "comment_id": 49655870,
+          "story_id": 49558685,
+          "distance": 0.573790431022644
+        },
+        {
+          "chunk_id": "hn-49661372-0",
+          "comment_id": 49661372,
+          "story_id": 49522896,
+          "distance": 0.5934518575668335
+        },
+        {
+          "chunk_id": "hn-49701590-0",
+          "comment_id": 49701590,
+          "story_id": 49638555,
+          "distance": 0.5956407785415649
+        },
+        {
+          "chunk_id": "hn-49646951-0",
+          "comment_id": 49646951,
+          "story_id": 49643982,
+          "distance": 0.5972371101379395
+        }
+      ]
+    },
+    {
+      "title": "Societal and Political Issues Reflected in Tech Discussions",
+      "description": "Threads touching on democracy and political systems, labor disputes in media companies, economic topics like streaming subscription costs, and social impacts of technology and policy decisions.",
+      "retrieval_query": "democracy labor disputes media economics streaming subscriptions",
+      "citation_ids": [
+        "S32",
+        "S33",
+        "S34",
+        "S35",
+        "S36",
+        "S37",
+        "S38",
+        "S39"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "hn-49671472-0",
+          "comment_id": 49671472,
+          "story_id": 49627887,
+          "distance": 0.6450392007827759
+        },
+        {
+          "chunk_id": "hn-49666353-0",
+          "comment_id": 49666353,
+          "story_id": 49592375,
+          "distance": 0.6691025495529175
+        },
+        {
+          "chunk_id": "hn-49672946-0",
+          "comment_id": 49672946,
+          "story_id": 49672510,
+          "distance": 0.6830266118049622
+        },
+        {
+          "chunk_id": "hn-49648232-0",
+          "comment_id": 49648232,
+          "story_id": 49619949,
+          "distance": 0.6987079381942749
+        },
+        {
+          "chunk_id": "hn-49650519-0",
+          "comment_id": 49650519,
+          "story_id": 49619949,
+          "distance": 0.6993401050567627
+        },
+        {
+          "chunk_id": "hn-49664025-0",
+          "comment_id": 49664025,
+          "story_id": 49661901,
+          "distance": 0.7125908136367798
+        },
+        {
+          "chunk_id": "hn-49647556-0",
+          "comment_id": 49647556,
+          "story_id": 49641215,
+          "distance": 0.7194936275482178
+        },
+        {
+          "chunk_id": "hn-49666419-0",
+          "comment_id": 49666419,
+          "story_id": 49592375,
+          "distance": 0.7458815574645996
+        }
+      ]
+    }
+  ],
+  "retrospective": [
+    {
+      "title": "Job Market and Hiring in Tech",
+      "body": "Within the sampled discussions, several posts highlighted ongoing hiring activity in tech, especially for roles involving AI, Python, TypeScript, and remote work. Companies like Squoosh.AI and Catalyst·Wayfare AI are recruiting for positions that blend AI research and engineering, emphasizing skills in LLMs, agent orchestration, and production AI systems [S1] [S13]. Candidates from diverse locations including India, the USA, and Georgia shared detailed resumes and technology stacks, often emphasizing remote work preferences and experience with AI agents, backend systems, and cloud infrastructure [S2] [S4] [S29]. Some comments reflected on the evolving nature of software development roles, where developers are expected to handle multiple responsibilities including database expertise, cloud operations, and front-end work without commensurate pay increases [S6]. Additionally, discussions touched on the impact of AI on traditional development workflows and the potential for AI to lower barriers for app development, though opinions varied on the optimism of these changes [S5] [S7] [S8] [S31]."
+    },
+    {
+      "title": "AI and Its Impact on Society and Engineering",
+      "body": "The sampled threads included conversations about the dual nature of AI as a powerful but potentially dangerous technology. Some posts expressed concerns about AI's existential risks, including the possibility of human extinction, and the challenges of balancing safety focus with innovation in AI labs [S9] [S10]. There was debate about the role of AI in engineering operations, with some cautioning against fully delegating critical incident handling to AI, emphasizing the importance of human oversight [S11]. Discussions also covered the use of AI in security contexts and the implications of restricting AI contributions in open source projects [S12] [S16]. Job postings for AI engineers underscored the demand for expertise in production LLM APIs, agent systems, and domain-specific AI applications in finance, healthcare, and legal sectors [S13] [S15]. A comment questioned the evidence for widespread job losses due to AI, indicating some skepticism about common narratives [S14]."
+    },
+    {
+      "title": "Privacy and Security Concerns with Technology",
+      "body": "Within the sampled discussions, privacy issues related to consumer electronics and software were prominent. Comments about LG and Samsung smart TVs logging conversations suggested user strategies to block DNS requests to mitigate privacy risks [S17]. The Fairphone Gen 6+ was discussed with respect to delayed security patches and challenges in maintaining timely updates, raising concerns about device security lifecycle management [S18] [S20]. Debates about DNSSEC adoption revealed differing views on its prevalence and effectiveness, with some participants citing statistics showing increased adoption and others questioning the relevance of those statistics to typical users [S19] [S22]. Security advisories for self-hosted software like Forgejo were shared, emphasizing the importance of following official channels for vulnerability information [S21]. Broader concerns were voiced about Silicon Valley's approach to security in military-industrial applications, highlighting risks from insufficient prioritization of security [S23]. Finally, discussions about GrapheneOS touched on the balance between encryption benefits and potential centralized control by dominant platform providers [S24]."
+    },
+    {
+      "title": "Software Development Tools and Techniques",
+      "body": "The sampled posts included technical discussions on programming languages, tooling, and performance optimization. Rust was mentioned in contexts such as rewriting firmware for an e-scooter and efforts to enable loop auto-vectorization, with references to tools that assist in assembly inspection and leveraging system C libraries for optimized operations [S25] [S27] [S30]. Comparisons between Rust and Clojure highlighted trade-offs in ergonomics and type system design, with some appreciation for Clojure's dynamic typing ergonomics and Rust's broader type expressiveness [S26] [S28]. Job postings and hiring discussions also referenced technologies like Common Lisp, Emacs Lisp, Java, Kubernetes, Terraform, and cloud platforms, reflecting a diverse tooling landscape [S4]. Additionally, there was curiosity about modernizing GUI frameworks with AI assistance to create lightweight cross-platform widgets as alternatives to heavier solutions like Electron.js [S31]."
+    },
+    {
+      "title": "Societal and Political Issues Reflected in Tech Discussions",
+      "body": "Several sampled comments engaged with political and societal themes intersecting with technology. Discussions about democracy and governance included contrasting views on the desirability and realities of democratic systems, with some emphasizing the risks of projecting liberal values universally and others defending democracy as a preferable system despite its flaws [S35] [S36]. The influence of AI on political discourse was noted, with concerns about misinformation and propaganda affecting governance [S32]. Labor and consumer protection issues surfaced in conversations about corporate terms of service enforcement and regulatory actions, with examples from PayPal and European consumer bureaus illustrating institutional checks on corporate power [S33] [S39]. Economic topics included the rising costs of streaming subscriptions, with debate about how content changes affect pricing perceptions [S38]. Finally, critiques of Silicon Valley's role in military-industrial transformation raised alarms about security priorities and innovation dynamics [S23] [S37]."
+    }
+  ],
+  "predictions": [
+    {
+      "claim": "Discussions about hiring in tech are likely to continue emphasizing remote work and AI-related skills.",
+      "rationale": "Recent posts show active hiring for remote roles involving AI, Python, TypeScript, and cloud technologies, reflecting ongoing demand for these skills and flexible work arrangements [S1] [S2] [S4] [S13].",
+      "uncertainty": "While current trends suggest continued interest, shifts in economic conditions or technology focus could alter hiring priorities."
+    },
+    {
+      "claim": "Concerns about AI's societal impact and existential risks may remain prominent in community discussions.",
+      "rationale": "Multiple sampled comments express both fascination and apprehension about AI's dangers, safety challenges, and ethical implications, indicating sustained community engagement with these topics [S9] [S10] [S11] [S14].",
+      "uncertainty": "The intensity and framing of these concerns may fluctuate with AI development milestones and public discourse."
+    },
+    {
+      "claim": "Privacy and security issues related to consumer devices and software updates could continue to be a focus.",
+      "rationale": "Ongoing conversations about smart TV privacy, delayed security patches on devices like Fairphone, and DNSSEC adoption suggest persistent community interest in practical security and privacy challenges [S17] [S18] [S19] [S20].",
+      "uncertainty": "Emerging technologies or regulatory changes might shift attention to new or different privacy concerns."
+    },
+    {
+      "claim": "Technical discussions on programming languages and performance optimization are likely to persist, with growing interest in AI-assisted development tools.",
+      "rationale": "Posts about Rust, Clojure, auto-vectorization, and AI agents assisting in code inspection indicate an active interest in improving development efficiency and exploring language trade-offs [S25] [S27] [S28] [S30].",
+      "uncertainty": "The specific tools and languages discussed may evolve as new technologies emerge."
+    },
+    {
+      "claim": "Societal and political topics related to technology governance, consumer rights, and economic impacts may continue to surface in discussions.",
+      "rationale": "Community members engage with themes of democracy, regulatory enforcement, misinformation, and economic trends such as subscription costs, reflecting ongoing intersections between tech and society [S32] [S33] [S35] [S38] [S39].",
+      "uncertainty": "The prominence of these topics may vary with current events and community interests."
+    }
+  ],
+  "limitation": "This report is based on a bounded sample of Hacker News comments from the selected window. It does not represent all of Hacker News.",
+  "sources": [
+    {
+      "citation_id": "S1",
+      "chunk_id": "hn-49662536-0",
+      "comment_id": 49662536,
+      "story_id": 49522897,
+      "story_title": "Ask HN: Who is hiring? (September 2026)",
+      "source_url": "https://news.ycombinator.com/item?id=49662536",
+      "created_at": "2026-09-11T17:57:09+00:00",
+      "text": "Squoosh.AI | Full-Stack Engineer (full-time, REMOTE) + PhD Researcher (part-time, REMOTE US) | https://squoosh.ai\nWe build AI systems that simulate how people explore digital experiences, helping commerce teams evaluate and improve websites. We're hiring for two roles:\nFull-Stack Engineer — $90k–150k USD/year. Own features across the UI, APIs, and data layer; turn tickets into small, tested PRs and follow them through release. Relevant stack: React/Next.js, TypeScript, Python APIs, Postgres, browser automation. We want someone who uses AI coding tools well and can independently debug and validate what they ship. Strong projects and early-career builders welcome.\nPhD Researcher — $60–70 USD/hour, part-time alongside current full-time PhD enrollment. Work on LLM/browser-agent evaluation, persona calibration, behavioral modeling, experimental design, and comparison with real A/B-test outcomes. Strong Python and research methods matter; bring a paper, repository, benchmark, or experiment you can explain deeply. US work authorization required; applicable CPT/OPT welcome. Schedule agreed around your doctorate.",
+      "distance": 0.42435508966445923
+    },
+    {
+      "citation_id": "S2",
+      "chunk_id": "hn-49648574-0",
+      "comment_id": 49648574,
+      "story_id": 49522896,
+      "story_title": "Ask HN: Who wants to be hired? (September 2026)",
+      "source_url": "https://news.ycombinator.com/item?id=49648574",
+      "created_at": "2026-09-10T18:51:48+00:00",
+      "text": "Location: Bengaluru, India\nRemote: Yes, remote only. Fine with US or European hours.\nWilling to relocate: No\nTechnologies: Python, TypeScript, LLMs and agents, agent evals and observability, FastAPI, React / Next.js, Postgres, enterprise API integrations\nRésumé / GitHub: github.com/yatishgoel | linkedin.com/in/yatish-goel-6a02841b4\nEmail: yg2k00@gmail.com\nI mostly work on production AI agents: the data and context they run on, the orchestration, and the evals that catch the agent when it does something dumb. That last part is the half most people skip, and it is usually the reason the thing survives a real user.\nA few specifics:\n- Co-founded Cozmoz, an agent that drives any mobile app from vision alone, no selectors. I built the eval and observability layer that kept it working while real apps changed under it. We wound it down in April, mostly a pricing and market problem, not a technical one.\n- Founding engineer at FuturePath AI. I took Fortune 500 accounts from first call to production, turned enterprise APIs (ServiceNow, Teams, Azure Graph) into tools an agent could actually use, and cut one customer's IT workload by about 30 percent.",
+      "distance": 0.4347718358039856
+    },
+    {
+      "citation_id": "S3",
+      "chunk_id": "hn-49649994-1",
+      "comment_id": 49649994,
+      "story_id": 49522897,
+      "story_title": "Ask HN: Who is hiring? (September 2026)",
+      "source_url": "https://news.ycombinator.com/item?id=49649994",
+      "created_at": "2026-09-10T20:50:48+00:00",
+      "text": "Tech: Python, Go, TypeScript, React, Nix, AWS (migrating from CDKTF — bonus if you've done this).\nSee our team in action:\nhttps://www.youtube.com/watch?v=mav15aW9lLM\nhttps://www.youtube.com/watch?v=XAsb7MIAzm8\nBring your GitHub and proudest firefighting story:\nhttps://xn--xp5a.anterior.app/ — mention what resonates.\nApply: https://jobs.ashbyhq.com/anterior/1163af7a-d1d6-41db-a8ea-fc...",
+      "distance": 0.45708316564559937
+    },
+    {
+      "citation_id": "S4",
+      "chunk_id": "hn-49652178-0",
+      "comment_id": 49652178,
+      "story_id": 49522896,
+      "story_title": "Ask HN: Who wants to be hired? (September 2026)",
+      "source_url": "https://news.ycombinator.com/item?id=49652178",
+      "created_at": "2026-09-11T00:53:52+00:00",
+      "text": "Location: Manteca, CA, USA\nRemote: Yes (required)\nWilling to relocate: No\nTechnologies: Common Lisp, Emacs Lisp, Java, Python, SQL, AWS, Azure, Kubernetes, Terraform, PostgreSQL, GitHub Actions\nRésumé/CV: https://sinistercode.com/public/donnie/resume\nEmail: macnod [at] gmail [dot] com\nLooking for a remote senior software engineering role or DevOps that is still engineering.\nRemote senior software engineer, 20+ years. Last year was DevOps (Azure, AWS, Kubernetes, Terraform); I still write as much code as ever.\nI write programs that write programs. Data UI is a compiler: a 57-line model becomes PostgreSQL, REST, React, row-level RBAC, and a Kubernetes+TLS deploy, versus roughly 20,000 lines of hand-built Java. https://data-ui.com\nCommon Lisp is the working language, not a hobby. The environment is Emacs with several AIs from different services in one instance: they see each other's buffers, cooperate with each other, especially when it comes to planning, and can edit the live Lisp they run in. The harness sits on gptel-agent. The rest is mine: define-gptel-agent, paren-balance checks, bash timeouts. Agents never stage or commit; I review unstaged diffs and commit myself.",
+      "distance": 0.48687028884887695
+    },
+    {
+      "citation_id": "S5",
+      "chunk_id": "hn-49646961-0",
+      "comment_id": 49646961,
+      "story_id": 49643982,
+      "story_title": "Shopify is moving from React Native back to Swift and Kotlin",
+      "source_url": "https://news.ycombinator.com/item?id=49646961",
+      "created_at": "2026-09-10T17:03:11+00:00",
+      "text": "The optimistic outlook:\nJust like this has made Web devs into Mobile devs, so could Mobile devs leverage AI to work in Web shops.\nI'm not an optimist but there could be an increase of available apps being created which would still keep people employed. Theoretically the cost of creating an iOS app for a company without an engineering team dropped from several hundreds of thousand to a few thousand or hundreds, which could be paid out to a freelancer with AI. More people would go into freelancing for industries which were not contemplated before due to cost.\nBut I'm not an optimist.",
+      "distance": 0.5746200084686279
+    },
+    {
+      "citation_id": "S6",
+      "chunk_id": "hn-49661031-0",
+      "comment_id": 49661031,
+      "story_id": 49601138,
+      "story_title": "I've operated petabyte-scale ClickHouse clusters for 5 years",
+      "source_url": "https://news.ycombinator.com/item?id=49661031",
+      "created_at": "2026-09-11T16:23:34+00:00",
+      "text": "Instead we're... listen to this... we're going to take a software developer right. Just a normal developer right. We're going to make them be the database expert right. And the cloud expert. And we're going to put them on call. We're going to have them debug linux logs, and optimize our AWS costs. They'll be there for client escalation work. And big sales calls. From time to time we'll even have them do front end work.\nAnd get this. We pay them the exact same.",
+      "distance": 0.5991158485412598
+    },
+    {
+      "citation_id": "S7",
+      "chunk_id": "hn-49668119-0",
+      "comment_id": 49668119,
+      "story_id": 49538375,
+      "story_title": "Saving money on Google Photos with Immich: Your own personal photo storage",
+      "source_url": "https://news.ycombinator.com/item?id=49668119",
+      "created_at": "2026-09-12T02:31:34+00:00",
+      "text": "For simplicity of explaining, I’m going to group web software parts in to “hard” and “easy” with AI assistance\nhard:\n- Overall security\n- User permissions in multi-user deployments\n- Input sanitization\n- RDBMS schema design\n- Parsing\n- Bit-rot protection (here because it’s rarely on the radar of the general user)\neasy:\n- DB queries against a known schema\n- Working in a front end HTML/CSS/JS stack\n- Making UI components\n- Moving those components around\nTo your question about why moving front end away from devs would reduce load: a person making a UI they want is a different category of work than creating a UI that everyone wants. Even if it’s easy, it’s distracting to be thinking about everyone’s use-cases and refining the details.",
+      "distance": 0.6169164180755615
+    },
+    {
+      "citation_id": "S8",
+      "chunk_id": "hn-49646935-0",
+      "comment_id": 49646935,
+      "story_id": 49643982,
+      "story_title": "Shopify is moving from React Native back to Swift and Kotlin",
+      "source_url": "https://news.ycombinator.com/item?id=49646935",
+      "created_at": "2026-09-10T17:01:40+00:00",
+      "text": "I'm certain that small startup Shopify could not afford to build native applications before AI became a thing. Thank god Sam Altman stole all the information in the world so that small family companies like this can finally have software too.",
+      "distance": 0.6426447629928589
+    },
+    {
+      "citation_id": "S9",
+      "chunk_id": "hn-49672981-0",
+      "comment_id": 49672981,
+      "story_id": 49672510,
+      "story_title": "We Must Pace the Frontier",
+      "source_url": "https://news.ycombinator.com/item?id=49672981",
+      "created_at": "2026-09-12T15:00:04+00:00",
+      "text": "The public discourse on this is incredibly poisoned, but the naked reality is:\n1. Artificial intelligence is clearly a vastly dangerous technology with plausible potential for human extinction.\n2. This scares people.",
+      "distance": 0.5339160561561584
+    },
+    {
+      "citation_id": "S10",
+      "chunk_id": "hn-49672961-0",
+      "comment_id": 49672961,
+      "story_id": 49672510,
+      "story_title": "We Must Pace the Frontier",
+      "source_url": "https://news.ycombinator.com/item?id=49672961",
+      "created_at": "2026-09-12T14:58:15+00:00",
+      "text": "The problem with being a safety focused AI lab, is you're also a danger focused AI lab. I don't think being danger focused leads you to build inspiring things.",
+      "distance": 0.5366456508636475
+    },
+    {
+      "citation_id": "S11",
+      "chunk_id": "hn-49671801-0",
+      "comment_id": 49671801,
+      "story_id": 49574167,
+      "story_title": "AI handles incidents, engineers lose touch with their systems",
+      "source_url": "https://news.ycombinator.com/item?id=49671801",
+      "created_at": "2026-09-12T12:47:01+00:00",
+      "text": "AI should never solely be in charge of anything of real significance.\nI say this as an AI proponent. Humans are the ones that touch grass.",
+      "distance": 0.5431836843490601
+    },
+    {
+      "citation_id": "S12",
+      "chunk_id": "hn-49660386-0",
+      "comment_id": 49660386,
+      "story_id": 49659245,
+      "story_title": "HuggingFace: Security.txt",
+      "source_url": "https://news.ycombinator.com/item?id=49660386",
+      "created_at": "2026-09-11T15:46:19+00:00",
+      "text": "Uncontrolled AI procreation?",
+      "distance": 0.5437352061271667
+    },
+    {
+      "citation_id": "S13",
+      "chunk_id": "hn-49650855-0",
+      "comment_id": 49650855,
+      "story_id": 49522897,
+      "story_title": "Ask HN: Who is hiring? (September 2026)",
+      "source_url": "https://news.ycombinator.com/item?id=49650855",
+      "created_at": "2026-09-10T22:15:25+00:00",
+      "text": "Catalyst·Wayfare AI | Agent Builder | Remote (US ET Overlap) | Full-time / Part-time / Contract | https://catalystwayfare.ai/careers\nAI transformation firm shipping production AI systems for mid-market enterprises in regulated and technical domains — finance, energy, industrials, healthcare. We do not stop at PowerPoint AI strategy. We ship working systems alongside our clients' engineering teams. Small teams, deep expertise, real autonomy on real work.\nHiring:\nAI Engineer, Agent Builder — Hands-on builder delivering key projects within multi-agent orchestrations — initially for one of the country's leading power engineering firms. End-to-end ownership of individual capability agents — prompts, tools, retrieval, deterministic checks, evals, monitoring, enabling infrastructure setup. 3–5+ yrs strong Python, real production LLM API experience, shipped multiple agentic systems end-to-end. 1099 contract, ~20–40 hrs/wk. Occasional US travel, where feasible. International candidates will be considered subject to US ET time-zone overlap. https://catalystwayfare.ai/jd-builder",
+      "distance": 0.5582764148712158
+    },
+    {
+      "citation_id": "S14",
+      "chunk_id": "hn-49742368-0",
+      "comment_id": 49742368,
+      "story_id": 49627887,
+      "story_title": "Anthropic researcher says more than 10% chance AI \"could kill all humans\"",
+      "source_url": "https://news.ycombinator.com/item?id=49742368",
+      "created_at": "2026-09-17T15:35:15+00:00",
+      "text": "> People are losing jobs left and right due to AI\nThere is 0 actual data supporting thus.",
+      "distance": 0.567598819732666
+    },
+    {
+      "citation_id": "S15",
+      "chunk_id": "hn-49661611-1",
+      "comment_id": 49661611,
+      "story_id": 49522897,
+      "story_title": "Ask HN: Who is hiring? (September 2026)",
+      "source_url": "https://news.ycombinator.com/item?id=49661611",
+      "created_at": "2026-09-11T16:57:55+00:00",
+      "text": "- Financial information systems. Bloomberg, FactSet, AlphaSense, Capital IQ, PitchBook. You know what entity resolution, identifier mapping and point-in-time data cost to get right.\n- Financial domain knowledge in healthcare. Equity research, valuation, or time spent living inside filings and models.\n- Audio and transcription. OtterAI Deepgram, AssemblyAI, Whisper. Diarization, speaker attribution, turning messy call audio into something quotable.\n- AI-intensive products where the pipeline IS the product. Legal AI, document intelligence, medical coding. You know what evals, grounding and extraction schemas that hold actually cost.\nMinimum: 5+ years building production web applications, a technical degree, fluency with current AI tooling, and eight continuous hours inside the 8:30am to 5:00pm ET window.\nApply: https://obi9.ai/jobs/full-stack-engineer?tab=apply",
+      "distance": 0.5678361058235168
+    },
+    {
+      "citation_id": "S16",
+      "chunk_id": "hn-49647515-0",
+      "comment_id": 49647515,
+      "story_id": 49645907,
+      "story_title": "Forgejo <=16.0.3 Critical RCE",
+      "source_url": "https://news.ycombinator.com/item?id=49647515",
+      "created_at": "2026-09-10T17:38:19+00:00",
+      "text": "This was my first thought after they disallowed LLM contributions.\nThey may not use AI to check for vulnerabilities but attackers are going to which puts themselves at the disadvantage.",
+      "distance": 0.5901429653167725
+    },
+    {
+      "citation_id": "S17",
+      "chunk_id": "hn-49661502-0",
+      "comment_id": 49661502,
+      "story_id": 49573427,
+      "story_title": "LG and Samsung TVs are logging everything you say [video]",
+      "source_url": "https://news.ycombinator.com/item?id=49661502",
+      "created_at": "2026-09-11T16:50:42+00:00",
+      "text": "I think your best best is to use something like pihole or another software for your router to block the TVs DNS resolution or ability to reach outside your network. I'm feeling pretty smug today about doing that on mine a while back, if only to keep it from nagging me about constant software updates.",
+      "distance": 0.45758116245269775
+    },
+    {
+      "citation_id": "S18",
+      "chunk_id": "hn-49656241-0",
+      "comment_id": 49656241,
+      "story_id": 49563784,
+      "story_title": "How Fairphone built the Fairphone Gen 6+",
+      "source_url": "https://news.ycombinator.com/item?id=49656241",
+      "created_at": "2026-09-11T10:50:01+00:00",
+      "text": "Easy to see they don't have Android 17 yet on their website so cannot get all security patches. The claimed patch level is about a month late.\nSearch online and see reports updates slow down cause they're busy. Maybe newer phones get faster updates for a year then slow down to every few months. I found that by googling.\nFound a post on the FP forum. FP4 was released with support for 5 years but SoC was only going to be supported for 2 more years so no firmware updates for 3 of them.\nidk why you ask GOS these questions. They know their stuff and shouldnt have to do research for people like a LLM. I didn't know and used Google and found enough to believe what they say.",
+      "distance": 0.6165505647659302
+    },
+    {
+      "citation_id": "S19",
+      "chunk_id": "hn-49699920-1",
+      "comment_id": 49699920,
+      "story_id": 49566193,
+      "story_title": "deSEC – Free Secure DNS",
+      "source_url": "https://news.ycombinator.com/item?id=49699920",
+      "created_at": "2026-09-14T16:47:25+00:00",
+      "text": "The argument about DNSSEC with you always goes in circles. You claim that DNSSEC adoption is not rising. But the Verisign statistics show that more domains are DNSSEC signed than ever before, every day, both by numbers and percentage. Then you claim that the large masses of domains don’t count, but only the top 1% of 1% of popular domains, which are, notably, with some exceptions, not commonly DNSSEC signed. But those domains are used by Google and other infinitely large and alien actors, which have very different security models and threat models than most people with a domain name. Then you try to argue against the Verisign graph by posting a link to other graphs which claim to show “DNSSEC adoption”. But the graph you link to is not about domains, but about resolvers. However, the large and most popular resolvers are from Google, Cloudflare and the like, and all of those have done DNSSEC validation for a long time.",
+      "distance": 0.6238875389099121
+    },
+    {
+      "citation_id": "S20",
+      "chunk_id": "hn-49672618-0",
+      "comment_id": 49672618,
+      "story_id": 49563784,
+      "story_title": "How Fairphone built the Fairphone Gen 6+",
+      "source_url": "https://news.ycombinator.com/item?id=49672618",
+      "created_at": "2026-09-12T14:23:28+00:00",
+      "text": "They lag 1-2 months behind the Android Security Bulletins which are months behind when patches can first be shipped by vendors. Verifying their kernels for the FP5 and earlier are end-of-life can be done by looking at the code. It's straightforward to verify they're a year or more behind on major updates and that those are required for full security patches. It's clear from a basic glance at the Android Security Bulletins that Low and Moderate severity patches are not backported. It's harder to demonstrate they don't backport all High and Critical severity patches but it's true and the gap of what's not backported is growing with recent changes. They made an announcement to OEMs about only the most recent 2 major yearly versions getting most High and Critical severity backports along with even those no longer getting a large portion of High and Critical internally found bugs which were found with LLMs.",
+      "distance": 0.6329255104064941
+    },
+    {
+      "citation_id": "S21",
+      "chunk_id": "hn-49647167-0",
+      "comment_id": 49647167,
+      "story_id": 49645907,
+      "story_title": "Forgejo <=16.0.3 Critical RCE",
+      "source_url": "https://news.ycombinator.com/item?id=49647167",
+      "created_at": "2026-09-10T17:15:45+00:00",
+      "text": "If you are self-hosting Forgejo and haven't done it yet, consider creating a Codeberg account and following https://codeberg.org/forgejo/security-announcements/issues",
+      "distance": 0.6343717575073242
+    },
+    {
+      "citation_id": "S22",
+      "chunk_id": "hn-49686497-0",
+      "comment_id": 49686497,
+      "story_id": 49566193,
+      "story_title": "deSEC – Free Secure DNS",
+      "source_url": "https://news.ycombinator.com/item?id=49686497",
+      "created_at": "2026-09-13T17:41:34+00:00",
+      "text": "> See the comment from 'dsl upthread.\nThat comment has recieved appropriate and adequate rebuttals, so I see no need to add anything further.\n> As for stats: https://dnssecmenot.fly.dev/\nYou said “Adoption of DNSSEC has barely budged”, and that is what the graph which I linked shows to be hilarously false. I remember that you often used to link the same graph – until it stopped showing what you wanted, that is. Now you come peddling a different, explicitly biased, graph, which only shows what the top 1% is doing, but I really don’t care about what the top %1:ers are doing. Most people are concerned with popularity in general, not what Google and Amazon are doing. Most people are not Google and Amazon, and consequently should take no lessons from them concerning their own systems.",
+      "distance": 0.6432873010635376
+    },
+    {
+      "citation_id": "S23",
+      "chunk_id": "hn-49646930-0",
+      "comment_id": 49646930,
+      "story_id": 49645754,
+      "story_title": "Silicon Valley Is Transforming the Military-Industrial Complex",
+      "source_url": "https://news.ycombinator.com/item?id=49646930",
+      "created_at": "2026-09-10T17:01:20+00:00",
+      "text": "They will transform the world. Why? They don't know shit about security nor prioritize it. Hardware will be captured, hardware will be reversed engineered, hacked and duplicated faster than anytime in history. They will essentially innovate and do the hard R&D for the rest of the world. Yup, transformation indeed. That is of course unless they make security top priority and they won't!",
+      "distance": 0.6621336936950684
+    },
+    {
+      "citation_id": "S24",
+      "chunk_id": "hn-49654933-0",
+      "comment_id": 49654933,
+      "story_id": 49590512,
+      "story_title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
+      "source_url": "https://news.ycombinator.com/item?id=49654933",
+      "created_at": "2026-09-11T07:53:56+00:00",
+      "text": "Part agreed (E2EE by default so broadly is a great achievement), part \"I think this is likely a massive communications power-grab on Google's part and not all that altruistic\". They control almost literally all of the servers and the only app nowadays (Samsung's is shutting down), globally, outside of Apple. Soon they will see a massive portion of the world's contact graph in near real time due to presence checking.\nI am very glad to hear they're finally exposing some of those details though. Now they just need to open it up to third parties, like the original reference implementation did over a decade ago, so we don't need to blindly trust them as much.",
+      "distance": 0.6639546155929565
+    },
+    {
+      "citation_id": "S25",
+      "chunk_id": "hn-49683974-0",
+      "comment_id": 49683974,
+      "story_id": 49638071,
+      "story_title": "Reverse engineering my e-scooter and rewriting the firmware in Rust",
+      "source_url": "https://news.ycombinator.com/item?id=49683974",
+      "created_at": "2026-09-13T13:46:22+00:00",
+      "text": "If it is coded in safe Rust, why not ?",
+      "distance": 0.49077486991882324
+    },
+    {
+      "citation_id": "S26",
+      "chunk_id": "hn-49695609-0",
+      "comment_id": 49695609,
+      "story_id": 49558685,
+      "story_title": "Simple Is Not Small",
+      "source_url": "https://news.ycombinator.com/item?id=49695609",
+      "created_at": "2026-09-14T12:18:58+00:00",
+      "text": "It certainly could be a blub situation, as aside from some toy applications, I don't have much experience with Rust. Obviously in Clojure, like most languages, you can restrict a resource to a particular scope - but it sounds like you mean something more than that.",
+      "distance": 0.5229028463363647
+    },
+    {
+      "citation_id": "S27",
+      "chunk_id": "hn-49698969-0",
+      "comment_id": 49698969,
+      "story_id": 49638555,
+      "story_title": "Trying to Make a Loop Auto-Vectorize",
+      "source_url": "https://news.ycombinator.com/item?id=49698969",
+      "created_at": "2026-09-14T15:49:49+00:00",
+      "text": "Very generally speaking, you want to view dissasembled sections.\nYou can do this at the function level.\nIn rust, try this: https://github.com/pacak/cargo-show-asm\nHowever, life is much easier now, because an agent knows how to steer through this with you. Have it teach you at first, then you know how to ask.\nThis is one of those \"back in my day we had to ... \" stories, btw :D",
+      "distance": 0.5539782643318176
+    },
+    {
+      "citation_id": "S28",
+      "chunk_id": "hn-49655870-2",
+      "comment_id": 49655870,
+      "story_id": 49558685,
+      "story_title": "Simple Is Not Small",
+      "source_url": "https://news.ycombinator.com/item?id=49655870",
+      "created_at": "2026-09-11T09:56:23+00:00",
+      "text": "Sorry, I hope I haven't come across too harsh to Clojure here. As I thought I was clear about above, Clojure's ergonomics for writing dynamically-typed code are vastly superior to Rust's. By coupling runtime type information to values and restricting itself to only being able to deal with values that are data and have runtime type data attached, Clojure gets to make a whole bunch of simplifying assumptions that reduce the work the programmer has to do when dealing with such values. That's the trade-off: Rust chooses to be able to express a much wider range of types by not requiring that coupling, but in exchange you have to be much more explicit when you do want to couple runtime type information to your values. Some languages like C# aim to be able to do both, i.e. start strongly typed and drop down ergonomically into dynamic typing as desired, but Rust is not one of those languages.\n> If we don't need to know the birthdate to calculate the white blood cell count, then we can exclude that field from the input type checking.",
+      "distance": 0.573790431022644
+    },
+    {
+      "citation_id": "S29",
+      "chunk_id": "hn-49661372-0",
+      "comment_id": 49661372,
+      "story_id": 49522896,
+      "story_title": "Ask HN: Who wants to be hired? (September 2026)",
+      "source_url": "https://news.ycombinator.com/item?id=49661372",
+      "created_at": "2026-09-11T16:42:02+00:00",
+      "text": "Location: Tbilisi, Georgia\nRemote: Yes\nWilling to relocate: Yes\nTechnologies: Rust, Python, backend, distributed systems, performance optimization\nCV: https://www.linkedin.com/in/xaver-florek-1a3692285\nEmail: ponyii@protonmail.com\nSenior Backend Engineer with 7 years of experience of building secure, high-performance, and thoroughly tested software",
+      "distance": 0.5934518575668335
+    },
+    {
+      "citation_id": "S30",
+      "chunk_id": "hn-49701590-0",
+      "comment_id": 49701590,
+      "story_id": 49638555,
+      "story_title": "Trying to Make a Loop Auto-Vectorize",
+      "source_url": "https://news.ycombinator.com/item?id=49701590",
+      "created_at": "2026-09-14T18:26:14+00:00",
+      "text": "You're right. In rust, IMHO, the problem is mostly solved by using system C libraries rather than trying to force Rust into something that looks like the optimized C/Fortran we've had for decades. In almost all cases, it's quite possible and quite painless to do it that way. For example, by just making it a matrix operation and letting the system wrapper library call out to something blas-like.",
+      "distance": 0.5956407785415649
+    },
+    {
+      "citation_id": "S31",
+      "chunk_id": "hn-49646951-0",
+      "comment_id": 49646951,
+      "story_id": 49643982,
+      "story_title": "Shopify is moving from React Native back to Swift and Kotlin",
+      "source_url": "https://news.ycombinator.com/item?id=49646951",
+      "created_at": "2026-09-10T17:02:29+00:00",
+      "text": "wow, what about electron.js the bloated cross-desktop GUI, can LLM either totally modernize wxWidgets(to avoid Qt's license mess), or create some light-weight cross platform GUI widgets to make GUI easy on windows/macos/linux that is not resource heavy?",
+      "distance": 0.5972371101379395
+    },
+    {
+      "citation_id": "S32",
+      "chunk_id": "hn-49671472-0",
+      "comment_id": 49671472,
+      "story_id": 49627887,
+      "story_title": "Anthropic researcher says more than 10% chance AI \"could kill all humans\"",
+      "source_url": "https://news.ycombinator.com/item?id=49671472",
+      "created_at": "2026-09-12T12:05:08+00:00",
+      "text": "> vote for governments that work for the people, not against them\nIronically enough, this is tough in the age of AI slopaganda",
+      "distance": 0.6450392007827759
+    },
+    {
+      "citation_id": "S33",
+      "chunk_id": "hn-49666353-0",
+      "comment_id": 49666353,
+      "story_id": 49592375,
+      "story_title": "216M Spy TVs – The LG Smart TV Problem [video]",
+      "source_url": "https://news.ycombinator.com/item?id=49666353",
+      "created_at": "2026-09-11T22:38:20+00:00",
+      "text": "There are governments with working institutions believe or not.\nAlso, I just read up and in our legal system a nonindividual agreement is nonbinding if “it is drastically against the consumer’s interests or against ‘good manners’”, with free legal help for consumers affected.\nE.g. last year PayPal was forbidden from giving out bans and suspensions of user accounts based on vague and overly broad rationales. They were also charged $25M for that, but that’s peanuts.\nIf you think about, a good government has institutions where there are people whose full time job is to look at hands of corporations and listen to citizens. I know this may sound like sci-fi if you don’t live in a country like that.",
+      "distance": 0.6691025495529175
+    },
+    {
+      "citation_id": "S34",
+      "chunk_id": "hn-49672946-0",
+      "comment_id": 49672946,
+      "story_id": 49672510,
+      "story_title": "We must pace the frontier",
+      "source_url": "https://news.ycombinator.com/item?id=49672946",
+      "created_at": "2026-09-12T14:56:16+00:00",
+      "text": "Export controls vs China don't imply Dario's personal control of AI, nor are they broadly in the interest of \"tech billionaires\" (Jensen hates them). Neither does admitting external auditors at AI companies--if anything that's a surrender of control.\nI don't see anything in the essay about restricting open frontier weights.\nIf you want to argue that the US has no right to be restricting technological development elsewhere, you have a case. But why tie this to free-market pseudo-populism against basic, domestically-scoped safety regulation?",
+      "distance": 0.6830266118049622
+    },
+    {
+      "citation_id": "S35",
+      "chunk_id": "hn-49648232-0",
+      "comment_id": 49648232,
+      "story_id": 49619949,
+      "story_title": "Iran says it captured US submarine drone in Strait of Hormuz",
+      "source_url": "https://news.ycombinator.com/item?id=49648232",
+      "created_at": "2026-09-10T18:28:18+00:00",
+      "text": "Given a choice I would rather live in democratic systems - but to say that everyone wants democratic systems tell you are not as exposed as you think you are. There are many failed democracies which resulted in highly bloated and corrupt governments, and these tend to make the situation worse. And there are many states running alternative governance system with success.\nWhen you are saying everyone, you are basically projecting your liberal values on others and you are convinced they are superior and that is why it is dangerous.\nRegarding wars - Iran, Iraq, Libya, and many other examples (coups) were initiated in the name of liberty and freedom. And notice that all those countries are rich in oil.\nRegarding Iran specifically, you won't understand until you study the Shai's faith and history which I'm sure you don't have any knowledge or understanding of.",
+      "distance": 0.6987079381942749
+    },
+    {
+      "citation_id": "S36",
+      "chunk_id": "hn-49650519-0",
+      "comment_id": 49650519,
+      "story_id": 49619949,
+      "story_title": "Iran says it captured US submarine drone in Strait of Hormuz",
+      "source_url": "https://news.ycombinator.com/item?id=49650519",
+      "created_at": "2026-09-10T21:39:59+00:00",
+      "text": "> Given a choice I would rather live in democratic systems - but to say that everyone wants democratic systems tell you are not as exposed as you think you are ...\nNope, just old. Like 40s old. I'm afraid I'm someone who thinks that either people want democracy, or just haven't been anywhere near an actual undemocratic system, haven't seen what happens.\nIn reality, either people are (a minimum level of) liberal (voluntarily or \"because otherwise I'd get arrested\"), or they live under constant violence. Those are the only choices, and the way that works for people like tankies or some religious lunatics is that they've never seen up close what violence does on even a medium scale. In other words, the way it works for them, maybe for you, is that it's a fantasy. Not fundamentally different from what I'd loved to have done with Sarah Michelle Gellar, when even back then she was probably way too old for me.\nAnd yeah your conspiracy theories about oil. THE war about liberty and freedom was Afghanistan. You might notice: no oil.",
+      "distance": 0.6993401050567627
+    },
+    {
+      "citation_id": "S37",
+      "chunk_id": "hn-49664025-0",
+      "comment_id": 49664025,
+      "story_id": 49661901,
+      "story_title": "Stop Omarchy",
+      "source_url": "https://news.ycombinator.com/item?id=49664025",
+      "created_at": "2026-09-11T19:28:33+00:00",
+      "text": "Related:\nOmarchy Is a Power Grab\nhttps://news.ycombinator.com/item?id=49658869",
+      "distance": 0.7125908136367798
+    },
+    {
+      "citation_id": "S38",
+      "chunk_id": "hn-49647556-0",
+      "comment_id": 49647556,
+      "story_id": 49641215,
+      "story_title": "The same nine streaming subscriptions cost $702/year more than in 2021",
+      "source_url": "https://news.ycombinator.com/item?id=49647556",
+      "created_at": "2026-09-10T17:40:59+00:00",
+      "text": "saying \"the exact same products\" when the products in question are constantly expanding (and occasionally contracting) libraries of video content is definitely \"a move\"",
+      "distance": 0.7194936275482178
+    },
+    {
+      "citation_id": "S39",
+      "chunk_id": "hn-49666419-0",
+      "comment_id": 49666419,
+      "story_id": 49592375,
+      "story_title": "216M Spy TVs – The LG Smart TV Problem [video]",
+      "source_url": "https://news.ycombinator.com/item?id=49666419",
+      "created_at": "2026-09-11T22:43:28+00:00",
+      "text": "Executive branch in Poland and I guess the rest of Europe as well. Bureau for Consumer Affairs. They make decisions, give penalties to corps and invalidate harmful ToS.\nThen if a corporation doesn’t like it (and they never do), they can appeal in court.\nE.g. PayPal is appealing rn because their shitty ToS were invalidated last year and they were punished for them.",
+      "distance": 0.7458815574645996
+    }
+  ],
+  "unknown_citation_ids": [],
+  "latency_seconds": 23.839,
+  "input_tokens": 11483,
+  "output_tokens": 1970,
+  "total_tokens": 13453
+}

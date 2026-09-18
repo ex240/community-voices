@@ -1,0 +1,30 @@
+# Secrets (keep .env.example)
+.env
+.env.*
+!.env.example
+
+# Local environment
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Test and lint caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local vector store and generated reports
+data/
+reports/
+*.log
+
+# OS
+.DS_Store
