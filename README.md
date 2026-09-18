@@ -54,7 +54,7 @@ The homepage and `GET /api/health` start **without** a key. Ingestion, retrieval
 cd community-voices
 python3.12 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements-dev.txt
+python -m pip install -r requirements-dev.txt
 cp .env.example .env
 ```
 
@@ -76,7 +76,7 @@ python -m app.ingest
 python -m app.retrieval_smoke
 python -m app.generate_report
 python -m app.compare_reports
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
 Then open [http://127.0.0.1:8000](http://127.0.0.1:8000).
@@ -110,9 +110,9 @@ uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 Tests and lint require no internet, no API key, and do not write to `./data/chroma`:
 
 ```bash
-pytest
-ruff check .
-ruff format --check .
+python -m pytest
+python -m ruff check .
+python -m ruff format --check .
 ```
 
 Window behavior:
