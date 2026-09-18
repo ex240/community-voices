@@ -64,7 +64,7 @@ Edit `.env` and set your own key:
 OPENAI_API_KEY=your-key-here
 ```
 
-Do not commit `.env`. `requirements-dev.txt` includes the runtime packages plus pytest and Ruff. For a run-only install you can use `pip install -r requirements.txt` instead.
+Do not commit `.env`. `requirements-dev.txt` includes the runtime packages plus pytest and Ruff. For a run-only install you can use `python -m pip install -r requirements.txt` instead.
 
 ## Recommended happy path
 
@@ -104,7 +104,7 @@ python -m app.compare_reports \
   --start 2026-09-10T17:00:00+00:00 \
   --end 2026-09-17T17:00:00+00:00
 
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
 Tests and lint require no internet, no API key, and do not write to `./data/chroma`:
